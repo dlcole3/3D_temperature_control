@@ -72,4 +72,4 @@ end
 N_range = [10, 20, 30, 40, 50, 75, 100, 125, 150, 200, 250, 300, 350, 400, 450, 500]
 nx_range = 4
 
-run_timers(N_range, nx_range, "nz4_sparse.jld", N_range, .02, .5, 350., 300.)
+run_timers(N_range, nx_range, "output_files/nz4_sparse.jld", N_range, .02, .5, 350., 300.)

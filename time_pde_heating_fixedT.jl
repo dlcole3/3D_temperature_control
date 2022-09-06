@@ -117,14 +117,14 @@ end
 N_range = 250
 nx_range = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
-run_timers(N_range, nx_range, "T250_condensed.jld", nx_range, .02, .5, 350., 300.)
+run_timers(N_range, nx_range, "output_files/T250_condensed.jld", nx_range, .02, .5, 350., 300.)
 
 N_range = 150
 nx_range = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
-run_timers(N_range, nx_range, "T150_condensed.jld", nx_range, .02, .5, 350., 300.)
+run_timers(N_range, nx_range, "output_files/T150_condensed.jld", nx_range, .02, .5, 350., 300.)
 
 N_range = 50
 nx_range = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
-run_timers(N_range, nx_range, "T50_condensed.jld", nx_range, .02, .5, 350., 300.)
+run_timers(N_range, nx_range, "output_files/T50_condensed.jld", nx_range, .02, .5, 350., 300.)
