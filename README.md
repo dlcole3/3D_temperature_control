@@ -6,8 +6,8 @@ The file `PDE_boundary_3d_heating.jl` contains the code for building the tempera
 
 $$
 \begin{aligned}
-    \min_{x, u} &\; \frac{1}{2} \int_0^{T_f} \int_{w \in \Omega} \left( (x(w, t) - d(w, t))^2 + \sum_{i \in \mathcal{U}} r u_i(t)^2 \right) dw dt\\
-    \textrm{s.t.} &\; \rho C_p  \frac{\partial x(w, t)}{dt} = k \nabla^2 x(w, t), \quad w \in \Omega, t \in [0, T_f]\\
+    \min_{x, u} \quad & \frac{1}{2} \int_0^{T_f} \int_{w \in \Omega} \left( (x(w, t) - d(w, t))^2 + \sum_{i \in \mathcal{U}} r u_i(t)^2 \right) dw dt\\
+    \textrm{s.t.} \quad & \rho C_p  \frac{\partial x(w, t)}{dt} = k \nabla^2 x(w, t), \quad w \in \Omega, t \in [0, T_f]\\
     & x^l \le x(w, t) \le x^u \quad w \in \Omega, t \in [0, T]\\
     & u^l \le u_i(t) \le u^u \quad i \in \mathcal{U}, w \in \Omega, t \in [0, T]\\
     & x(\bar{w}, t) = u_i(t), \quad \bar{w} \in \partial \Omega_i, i \in \mathcal{U}  \\
