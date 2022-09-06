@@ -1,0 +1,67 @@
+This is MadNLP version v0.4.2, running with Lapack-GPU (CHOLESKY)
+
+Number of nonzeros in constraint Jacobian............:  6000000
+Number of nonzeros in Lagrangian Hessian.............:   281625
+
+Total number of variables............................:      750
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:      750
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:        0
+Total number of inequality constraints...............:     8000
+        inequality constraints with only lower bounds:        0
+   inequality constraints with lower and upper bounds:     8000
+        inequality constraints with only upper bounds:        0
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  3.8592374e+03 1.59e+02 2.00e-01  -1.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  4.0292481e+03 1.57e+02 1.25e+00  -1.0 2.22e+02    -  3.95e-03 8.91e-03h  1
+   2  4.0746674e+03 1.57e+02 1.24e+00  -1.0 1.52e+02    -  3.57e-03 2.44e-03h  1
+   3  4.1689309e+03 1.56e+02 1.24e+00  -1.0 1.48e+02    -  5.69e-03 5.36e-03h  1
+   4  4.2639139e+03 1.55e+02 1.58e+00  -1.0 1.52e+02    -  1.13e-02 7.41e-03h  1
+   5  4.3071240e+03 1.52e+02 2.03e+00  -1.0 1.54e+02    -  1.97e-02 1.68e-02h  1
+   6  4.3115357e+03 1.28e+02 4.60e+00  -1.0 1.52e+02    -  3.79e-02 1.61e-01h  1
+   7  4.3092052e+03 1.71e-13 6.32e+00  -1.0 1.28e+02    -  1.99e-01 1.00e+00h  1
+   8  4.3060191e+03 1.71e-13 1.48e+00  -1.0 6.74e-02    -  8.39e-01 1.00e+00f  1
+   9  4.2725002e+03 1.71e-13 1.40e+00  -1.0 7.67e+00    -  5.60e-02 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  4.1913461e+03 1.71e-13 9.95e-01  -1.0 1.17e+02    -  2.84e-01 1.00e+00f  1
+  11  3.9931196e+03 2.27e-13 8.84e-01  -1.0 9.23e+01    -  9.87e-02 1.00e+00f  1
+  12  3.5439407e+03 1.71e-13 7.24e-01  -1.0 4.65e+01    -  1.75e-01 1.00e+00f  1
+  13  2.9575088e+03 1.71e-13 5.32e-01  -1.0 3.31e+01    -  2.55e-01 1.00e+00f  1
+  14  2.6075970e+03 1.71e-13 3.46e-01  -1.0 2.17e+01    -  3.31e-01 1.00e+00f  1
+  15  2.4792310e+03 1.71e-13 1.80e-01  -1.0 1.32e+01    -  4.30e-01 1.00e+00f  1
+  16  2.4503340e+03 2.27e-13 7.64e-02  -1.0 1.19e+01    -  3.72e-01 1.00e+00f  1
+  17  2.4495657e+03 1.71e-13 6.89e-15  -1.0 9.11e+00    -  1.00e+00 1.00e+00f  1
+  18  2.4247134e+03 1.71e-13 5.65e-04  -2.5 1.79e+00    -  9.73e-01 1.00e+00f  1
+  19  2.4190786e+03 2.27e-13 2.64e-03  -3.8 2.02e+00    -  7.35e-01 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  20  2.4184018e+03 1.71e-13 9.17e-05  -3.8 5.95e-01    -  9.85e-01 1.00e+00h  1
+  21  2.4183065e+03 1.71e-13 5.33e-15  -3.8 4.20e-01    -  1.00e+00 1.00e+00h  1
+  22  2.4182439e+03 2.27e-13 1.30e-05  -5.7 1.61e-01    -  9.89e-01 1.00e+00h  1
+  23  2.4182420e+03 1.71e-13 6.68e-15  -5.7 6.84e-02    -  1.00e+00 1.00e+00h  1
+  24  2.4182417e+03 1.71e-13 6.36e-15  -5.7 3.51e-02    -  1.00e+00 1.00e+00h  1
+  25  2.4182410e+03 2.27e-13 6.28e-15  -8.6 1.78e-02    -  1.00e+00 1.00e+00h  1
+  26  2.4182410e+03 1.71e-13 5.73e-15  -8.6 4.86e-03    -  1.00e+00 1.00e+00h  1
+  27  2.4182410e+03 2.27e-13 4.99e-15  -8.6 3.23e-04    -  1.00e+00 1.00e+00h  1
+
+Number of Iterations....: 27
+
+                                   (scaled)                 (unscaled)
+Objective...............:   2.4182410094062798e+03    2.4182410094062798e+03
+Dual infeasibility......:   4.9857048611650715e-15    4.9857048611650715e-15
+Constraint violation....:   2.2737367544323206e-13    2.2737367544323206e-13
+Complementarity.........:   2.8795656743837092e-09    2.8795656743837092e-09
+Overall NLP error.......:   2.8795656743837092e-09    2.8795656743837092e-09
+
+Number of objective function evaluations             = 28
+Number of objective gradient evaluations             = 28
+Number of constraint evaluations                     = 29
+Number of constraint Jacobian evaluations            = 1
+Number of Lagrangian Hessian evaluations             = 1
+Total wall-clock secs in solver (w/o fun. eval./lin. alg.)  =  0.297
+Total wall-clock secs in linear solver                      =  0.018
+Total wall-clock secs in NLP function evaluations           =  0.117
+Total wall-clock secs                                       =  0.432
+
+EXIT: Optimal Solution Found.
