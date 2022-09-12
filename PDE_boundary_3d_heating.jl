@@ -21,7 +21,7 @@ function build_3D_heating_AB(dx, nx, dt)
     B = zeros(nx^3, 6)
 
     k = 400. # thermal conductivity of copper, W/(m-K)
-    k2 = 400
+
     rho = 8960. # density of copper, kg/m^3
     specificHeat = 386. # specific heat of copper, J/(kg-K)
 
