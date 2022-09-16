@@ -26,7 +26,7 @@ function build_3D_heating_AB(dx, nx, dt)
     specificHeat = 386. # specific heat of copper, J/(kg-K)
 
     conduction_constant = k * dt / rho / specificHeat / dx^2
-    input_constant = k2 * dt / rho / specificHeat / dx^2
+    input_constant = k * dt / rho / specificHeat / dx^2
 
     # Set A matrix
     for i in 1:nx^3
