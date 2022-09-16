@@ -54,8 +54,8 @@ function solve_PDE(lqdm, kkt_system, algorithm, device)
 		        :max_iter=>200,
                 :output_file =>"output_files/cpu_condensed_Trange_ns$(ns)_T$(N)",
             )
-            ips = MadNLP.InteriorPointSolver(lqdm, option_dict = madnlp_options)
-            sol_ref      = MadNLP.optimize!(ips)
+            ips = MadNLP.MadNLPSolver(lqdm; madnlp_options...)
+            sol_ref      = MadNLP.solve!(ips)
 
             if i == 2
                 return sol_ref.iter, sol_ref.elapsed_time, sol_ref.status, sol_ref.objective, ips.cnt.total_time, ips.cnt.solver_time, ips.cnt.eval_function_time, ips.cnt.linear_solver_time
@@ -72,8 +72,8 @@ function solve_PDE(lqdm, kkt_system, algorithm, device)
                 :output_file => "output_files/gpu_condensed_Trange_ns$(ns)_T$(N)",
             )
 
-            ips = MadNLPGPU.CuInteriorPointSolver(lqdm, option_dict = madnlp_options)
-            sol_ref = MadNLP.optimize!(ips)
+            ips = MadNLPGPU.CuMadNLPSolver(lqdm; madnlp_options...)
+            sol_ref = MadNLP.solve!(ips)
 
             if i == 2
                 return sol_ref.iter, sol_ref.elapsed_time, sol_ref.status, sol_ref.objective, ips.cnt.total_time, ips.cnt.solver_time, ips.cnt.eval_function_time, ips.cnt.linear_solver_time
